@@ -3,9 +3,9 @@ class PigLatinizer
   def piglatinize(in_str)
     if in_str.split(" ").length == 1 
        piglatinize_word(in_str)
-     else
+    else
        piglat_sentence(in_str)
-     end 
+    end 
   end
 
   private
