@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def piglatinize(in_str)
-    in_str.split(" ").length == 1 ? piglatinize_word(in_str) : piglatinize_sentence(in_str)
+    in_str.split(" ").length == 1 ? piglatinize_word(in_str) : piglat_sentence(in_str)
   end
 
   private
@@ -27,7 +27,7 @@ class PigLatinizer
     word << "ay"
   end
 
-  def piglatinize_sentence(sentence)
+  def piglat_sentence(sentence)
     sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
   end
 
